@@ -1,3 +1,4 @@
+
 export default class Collapse {
     constructor() {
         this.widget = document.querySelector('.widget');
@@ -12,14 +13,13 @@ export default class Collapse {
     }
 
     init() {
-        this.button.addEventListener('click', () => this.openCollapse());
+        this.button.addEventListener('click', () => this.toggleCollapse());
     }
 
-    openCollapse() {
-        if (this.textContainer.classList.contains('show')) {
-            this.textContainer.classList.remove('show');
-        } else {
-            this.textContainer.classList.add('show');
-        }
+    toggleCollapse() {
+        const isExpanded = this.textContainer.classList.toggle('show');
+
+        // Изменение текста кнопки
+        this.button.textContent = isExpanded ? 'Collapse' : 'Expand';
     }
 }

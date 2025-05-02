@@ -9,5 +9,7 @@ deploy:
   provider: GitHubPages
   repository: Elizabess/widget
   branch: gh-pages
+  folder: dist
   on:
     branch: main
+  token: %GITHUB_TOKEN%

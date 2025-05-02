@@ -47,12 +47,11 @@ button {
 
 .text__conteiner.show {
     transition: all 0.3s ease;
-    max-height: 200px; /* Увеличьте значение, если нужно */
+    max-height: 200px; 
     margin-bottom: 5px;
-    display: block; /* Убедитесь, что элемент отображается */
+    display: block; 
 }
 
-  
 .text {  
     margin: 20px; 
     padding: 10px;
